@@ -3,6 +3,8 @@
 ### SSH:
 ```
 ssh-keygen -t ed25519 -C "dylanmorel0117@gmaiL.com"
+Import de la clé sur le compte Github en allant dans "parametrese" puis "Clés SSH"
+ssh -T git@github.com
 ```
 ### Dossier Devops
 Création du dossier DevOps via interface graphique de visual studio code
@@ -40,6 +42,7 @@ git merge develop
 
 ## Liens Utilisés:
 ```
+https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 https://training.github.com/downloads/fr/github-git-cheat-sheet.pdf
 https://www.atlassian.com/fr/git/glossary#commands
 https://www.hostinger.com/fr/tutoriels/commandes-git
@@ -49,6 +52,7 @@ https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 | Commande | Description |
 |:-------- |:--------:| 
 | ssh-keygen -t ed25519 -C "dylanmorel0117@gmaiL.com"    | Création de la clé SSH  |
+| ssh -T git@github.com    | Connexion à Github  |
 | git branch develop     | Création de la deuxieme branch "develop"   | 
 | git add Devops/*    | Ajout de tout le dossier Devops dans l'index pour le commit   | 
 | git commit -m "depot"    | Enregistre des instantanés des fichiers de l'index   | 

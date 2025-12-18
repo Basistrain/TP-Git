@@ -45,6 +45,18 @@ https://www.atlassian.com/fr/git/glossary#commands
 https://www.hostinger.com/fr/tutoriels/commandes-git
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 ```
+## Liste des commandes:
+| Commande | Description |
+|:-------- |:--------:| 
+| ssh-keygen -t ed25519 -C "dylanmorel0117@gmaiL.com"    | Création de la clé SSH  |
+| git branch develop     | Création de la deuxieme branch "develop"   | 
+| git add Devops/*    | Ajout de tout le dossier Devops dans l'index pour le commit   | 
+| git commit -m "depot"    | Enregistre des instantanés des fichiers de l'index   | 
+| git push origin develop    | Envoie tous les commits de la branche develop vers GitHub   | 
+| git switch main    | Permet de passer d'une branche à une autre, ici on passe de develop à la branche main   | 
+| git merge develop    | Combine dans la branche courante l'historique de la branche spécifiée  | 
+| git mv ./DevOps/file1 ./DevOps/file1.txt     | Renomme le fichier et prépare le changement pour un commit    | 
+| git rm DevOps/file3    | Supprime le fichier du répertoire de travail et met à jour l'index   | 
 ## Diagram du flow
 
 ```mermaid

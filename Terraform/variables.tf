@@ -1,10 +1,10 @@
-resource "google_runtimeconfig_config" "my-runtime-config" {
-  name        = "my-service-runtime-config"
-  description = "Runtime configuration values for my service"
+variable "instance_type" {
+  type        = string
+  description = "EC2 instance type for the web server"
+  default     = "t2.micro"
 }
 
-resource "google_runtimeconfig_variable" "environment" {
-  parent = google_runtimeconfig_config.my-runtime-config.name
-  name   = "prod-variables/hostname"
-  text   = "example.com"
+variable "subnet_id" {
+  type        = string
+  description = "Subnet ID where the web server will be deployed"
 }

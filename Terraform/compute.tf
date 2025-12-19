@@ -2,7 +2,7 @@ data "google_compute_default_service_account" "default" {
   project = "${var.project}"
 }
 data "google_compute_region_instance_group_manager" "rigm" {
-  name = "my-igm"
+  name = "c"
   region = "europe-west9"
 }
 resource "google_compute_instance_group_manager" "igm" {

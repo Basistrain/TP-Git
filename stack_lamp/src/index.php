@@ -7,7 +7,7 @@ echo "<p>✅ PHP fonctionne (Version " . phpversion() . ")</p>";
 $servername = "db";
 $username = "user"; // Vos identifiants du docker-compose
 $password = "password";
-$dbname = "company";
+$dbname = "db";
 // Création de la connexion
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Vérification

@@ -1,0 +1,23 @@
+version: "3"
+services:
+  web:
+    image: nginx:latest
+    volumes:
+      - ./html:/usr/share/nginx/html
+    ports:
+      - "80:80"
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: v3pO50Pq]rC$6
+    volumes:
+      - db_data:/var/lib/mysql
+  php:
+    image: php
+    build:
+      context: ./php
+    volumes:
+      - ./php:/usr/src/myapp
+    environment:
+      POSTGRES_USER: example
+      POSTGRES_DB: exampledb
